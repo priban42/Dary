@@ -21,5 +21,6 @@ admin.autodiscover()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.seznam)
+    path('', views.seznam),
+    path('1368438715341223589764531521', views.resetDB)
 ]
