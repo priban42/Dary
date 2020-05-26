@@ -1,0 +1,156 @@
+<style>
+
+body {
+font-family: "EB Garamond", Georgia, Times;
+background:#02466f;
+color:white
+}
+
+h1 {
+text-align: center;
+font-weight: normal
+}
+
+p {font-size: large; width:300px; margin: auto;}
+a {font-size: large; color:#02466f; text-decoration: none; background:#b3e6ff; padding: 0px 5px;}
+
+.btn {
+  border: none;
+  font-family: "EB Garamond", Georgia, Times;
+  color: white;
+  padding: 9px 12px;
+  cursor: pointer;
+ font-size: large
+}
+
+
+/* Gray */
+.default {
+  border: none;
+  background:white;
+  color: black;
+  font-family: "EB Garamond", Georgia, Times;
+}
+
+.default:hover {
+  background: #047dc8;
+}
+
+ /* Three columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+vertical-align: middle
+
+
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 50%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0px 13px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Titulek stránky</title>
+</head>
+<body>
+
+<h1>Seznam darů</h1>
+<br>
+
+<span style="text-align: central; padding: 0px 30px; font-size:large;">Moc prosíme,
+pokud  nám budete chtít koupit něco, co není na seznamu darů, prokonzultujte nejdříve
+váš nápad se svědkem ženicha <a href="http://mmgg.mysteria.cz/#svedkove">(kontakt)</a>.
+Děkujeme. </span>
+
+
+
+{% for dar in dary %}
+        <span class="a">
+  <div class="column">
+      <p><img class="img" src="{{ dar.img_url }}">
+      </p><div class="container">
+        <span style="font-size:x-large; ">{{ dar.name }}</span>
+        <br><br>
+                {% if dar.rezervace %}
+                    zarezervováno
+                {% else %}
+                    nezarezervováno
+                    <form>
+                        <input name="index" value="{{ dar.id }}", type="hidden">
+                        <input class="btn default" type="submit", value="rezervovat">
+                    </form>
+                {% endif %}
+        <br>
+
+         <p>{{ dar.text | safe }}</p><p></p>
+
+    </div>
+  </div>
+</span>
+{% endfor %}
+
+<!--
+<table border="1">
+{% for dar in dary %}
+    <tr cellspacing="0">
+        <td>
+            {{ dar.name }}
+            {% if dar.img_url != "" %}
+            <img src="{{ dar.img_url }}"height="150">
+            {% endif %}
+        </td>
+
+        <td>{{ dar.text }}</td>
+            <td>
+                {% if dar.rezervace %}
+                    zarezervováno
+                {% else %}
+                    nezarezervováno
+                    <form>
+                        <input name="index" value="{{ dar.id }}", type="hidden">
+                        <input class="btn default" type="submit", value="rezervovat">
+                    </form>
+                {% endif %}
+        </td>
+    </tr>
+{% endfor %}
+</table>
+-->
+
+</body>
