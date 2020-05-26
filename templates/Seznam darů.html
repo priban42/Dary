@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://mmgg.mysteria.cz/beta-dary.html -->
+<html lang="cs"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./Seznam darů_files/css" rel="stylesheet" type="text/css">
+
+<link href="http://mmgg.mysteria.cz/image002.png" rel="icon">
+<link rel="icon" href="http://mmgg.mysteria.cz/index_soubory/image002.png" sizes="34x34">
+<style> 
+
+body {
+font-family: "EB Garamond", Georgia, Times;
+background:#02466f;
+color:white
+}
+
+h1 {
+text-align: center;
+font-weight: normal
+} 
+
+p {font-size: large; padding: 0px 1px;}
+a {font-size: large; color:#02466f; text-decoration: none; background:#b3e6ff; padding: 0px 5px;}
+
+.btn {
+  border: none;
+  font-family: "EB Garamond", Georgia, Times;
+  color: white;
+  padding: 9px 12px;
+  cursor: pointer;
+ font-size: large
+}
+
+
+/* Gray */
+.default {
+  border: none;
+  background:white;
+  color: black;
+  font-family: "EB Garamond", Georgia, Times;
+}
+
+.default:hover {
+  background: #047dc8;
+}
+
+ /* Three columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+vertical-align: middle
+
+
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 50%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0px 13px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style> 
+<title>Seznam darů</title>
+</head>
+<body>
+
+<h1>Seznam darů</h1>
+<br>
+
+<span style="text-align: central; padding: 0px 50px; font-size:large;">Moc prosíme, 
+pokud  nám budete chtít koupit něco, co není na seznamu darů, prokonzultujte nejdříve 
+váš nápad se <a href="http://mmgg.mysteria.cz/#svedkove">svědkem ženicha</a>. 
+Děkujeme. </span>
+
+
+<div class="row">
+  <div class="column">
+      <p><img class="img" src="./Seznam darů_files/zehlicka.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Žehlička</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p>Ideálně napařovací.</p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/zehlici_prkno.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large;">Žehlící prkno</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p> </p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/vysavac.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Vysavač</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p>Aby byl skladný.</p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/mop.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Mop</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p>S obdelníkovým zacvakávacím hadříkem (aby se nemusel nandavat pokaždé znovu) a odstředivkou. 
+         Příklad třeba <a href="https://www.leifheit-shop.cz/uklidova-sada-twist-system-new-m-leifheit-52014?gclid=CjwKCAjw_LL2BRAkEiwAv2Y3Sd3oeorq_iVjagbD_eU2-qrtOvaY6yKkK4EskRJ88TwvcKEh67Yb7xoC7vYQAvD_BwE">tento</a>
+         nebo <a href="https://www.mall.cz/sety-mopy/vileda-ultramax-set-box?gclid=CjwKCAjw_LL2BRAkEiwAv2Y3SZC_cD6O_uUmAfR2u1AFqlw-1okumvVYt0w-2Dx4jrsTNNzYz0rv7RoCao0QAvD_BwE">tento</a></p><p></p>
+    </div> </div>
+  </div>
+<br>  
+ 
+
+
+  <div class="row">
+  <div class="column">
+      <p><img class="img" src="./Seznam darů_files/odmerka.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Kuchyňská odměrka</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p>Může být laboratorní odměrný válec - pokud možno spíše nižší než vyšší, objem 250 ml či 300 ml.</p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/lekarnicka.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large;">Domácí lékárnička</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p>Nějakou pěknou, praktickou, vybavenou takovým běžným vybavením lékárničky do 
+         domácnosti (obinadla, náplasti, černé uhlí, analgetika, desinfekce atd.)
+         Obrázek výše je spíše ilustrativní. Ikdyž...</p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/krajec_na_vajicka.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Kráječ na vajíčka</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p>Ten obrázek vypadá spíše jako postel, ale věřte mi, není to postel. Je to kráječ na vajíčka.</p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/kokedama.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Stínomilná kokedama</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p></p><p></p>
+    </div> </div>
+  </div>
+<br> 
+
+  <div class="row">
+  <div class="column">
+      <p><img class="img" src="./Seznam darů_files/silikonovy_val.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Silikonový vál na těsto</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p></p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/pokojovka.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large;">Velká pokojovka</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p>Například fíkus, chamedorea, shefflera...Tak, aby nám to zvládlo severní okna.</p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/rasokoule.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Řasokoule v kulatém akvárku</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p>:-)</p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/septuaginta.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Septuaginta</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p>Řecký překlad Sterého zákona.</p><p></p>
+    </div> </div>
+  </div>
+  
+<br> 
+
+ <div class="row">
+  <div class="column">
+      <p><img class="img" src="./Seznam darů_files/osadnici_z_katanu.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Desková hra: Osadníci z Katanu</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p> </p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/carcassonne.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large;">Desková hra: Carcassonne</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p> Nejlépe Mindok Carcassonne Big Box 2017, neboť je to rozšířená verze.</p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/dostihy_a_sazky.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Desková hra: Dostihy a sázky</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p>Ideálně pokud by se dalo sehnat staré vydání.</p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/junglespeed.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Společenská hra: Jungle Speed</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p> </p><p></p>
+    </div> </div>
+  </div>
+<br>
+
+  <div class="row">
+  <div class="column">
+      <p><img class="img" src="./Seznam darů_files/citadela.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Společenská hra: Citadela</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p> </p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/bang.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large;">Společenská hra: BANG!</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p>Základní balíček plus rozšíření "Fistful", "Město duchů" a "Divoký západ".</p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/dortova_forma.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Dortová forma</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p>Nějaká taková střední velikost.</p><p></p>
+    </div> </div>
+    
+      <div class="column">
+      <p><img class="img" src="./Seznam darů_files/zapekaci_misky.jpg"> 
+      </p><div class="container">
+        <span style="font-size:x-large; ">Sada zapékacích mističek</span>
+        <br><br>
+            <form>
+                        <input name="index" value="{{ dar.id }}" ,="" type="hidden">
+                        <input class="btn default" type="submit" ,="" value="rezervovat">
+                    </form>
+        <br>
+         <p> </p><p></p>
+    </div> </div>
+  </div>
+<br> 
+
+
+
+
+
+
+</body></html>

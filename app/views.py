@@ -57,10 +57,6 @@ def example():
     text="Řecký překlad Starého zákona.",
     rezervace=False,
     img_url="http://mmgg.mysteria.cz/dary/septuaginta.jpg").save()
-    Dar(name = "Žehlička",
-    text="Ideálně napařovací.",
-    rezervace=False,
-    img_url="http://mmgg.mysteria.cz/dary/zehlicka.jpg").save()
     Dar(name = "Desková hra: Osadníci z Katanu",
     text="",
     rezervace=False,
@@ -92,7 +88,7 @@ def example():
     Dar(name = "Sada zapékacích mističek",
     text="Ideálně napařovací.",
     rezervace=False,
-    img_url="http://mmgg.mysteria.cz/dary/zepekaci_misky.jpg").save()
+    img_url="http://mmgg.mysteria.cz/dary/zapekaci_misky.jpg").save()
     Dar(name = "Elektrický ruční šlehač",
     text="Ruční šlehač, ideálně se stojanem. Například <a href=\"https://www.mall.cz/mixery/sencor-shm-5330-eue3?gclid=CjwKCAjw_LL2BRAkEiwAv2Y3SWF3s1adC7xmRPkx3KDFEBwv2LPgvZjybUpbMaD7Lpl1d40ReIDXdBoCTz4QAvD_BwE\">tento</a>.",
     rezervace=False,

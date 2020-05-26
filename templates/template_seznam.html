@@ -78,18 +78,20 @@ vertical-align: middle
 span.b {
   display: inline-block;
   width: 300px;
-
+    align:top;
   padding: 5px;
 }
 
 </style>
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Titulek stránky</title>
+    <title>Seznam darů</title>
 </head>
 <body>
 
+<br>
 <h1>Seznam darů</h1>
 <br>
 
@@ -99,18 +101,18 @@ váš nápad se svědkem ženicha <a href="http://mmgg.mysteria.cz/#svedkove">(k
 Děkujeme. </span>
 
 
-
+<div class="row">
 {% for dar in dary %}
-        <span class="b">
-  <div class="column">
-      <p><img class="img" src="{{ dar.img_url }}">
-      </p><div class="container">
+
+  <div class="column" >
+      <img class="img" src="{{ dar.img_url }}">
+      <div class="container">
         <span style="font-size:x-large; ">{{ dar.name }}</span>
         <br><br>
                 {% if dar.rezervace %}
                     zarezervováno
+                    <br>
                 {% else %}
-                    nezarezervováno
                     <form>
                         <input name="index" value="{{ dar.id }}", type="hidden">
                         <input class="btn default" type="submit", value="rezervovat">
@@ -122,8 +124,13 @@ Děkujeme. </span>
 
     </div>
   </div>
-</span>
+    {% if forloop.counter|divisibleby:4 %}
+        </div>
+        <br>
+        <div class="row">
+    {% endif %}
 {% endfor %}
+</div>
 
 <!--
 <table border="1">
