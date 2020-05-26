@@ -16,10 +16,15 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
 
-# SECURITY WARNING: keep the secret key used in production secret!
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+
 SECRET_KEY = '736*yjfm^%_=pj*!(a+8wumam(7@o%f5gdg=1@2zcy4$&26a(d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -120,4 +125,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-DISABLE_COLLECTSTATIC=1
