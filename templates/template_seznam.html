@@ -105,6 +105,16 @@ váš nápad se svědkem ženicha <a href="http://mmgg.mysteria.cz/#svedkove">(k
 Děkujeme. </span>
 
 
+<script>
+function myFunction() {
+    if (confirm("Opravdu si přejete rezervovat tento dar? Tato akce lze vrátit kontaktovím nevěsty.")){
+        document.getElementById("form").submit();
+    }
+
+}
+</script>
+
+
 <div class="row">
 {% for dar in dary %}
 
@@ -117,9 +127,10 @@ Děkujeme. </span>
                     zarezervováno
                     <br>
                 {% else %}
-                    <form>
+                    <form id="form">
                         <input name="index" value="{{ dar.id }}", type="hidden">
-                        <input class="btn default" type="submit", value="rezervovat">
+                        <button type="button" onclick="myFunction()" class="btn default",>rezervovat</button>
+
                     </form>
                 {% endif %}
         <br>

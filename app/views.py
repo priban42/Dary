@@ -106,4 +106,5 @@ def seznam(request):
     if (len(request.GET)) > 0 and len(request.GET['index']) > 0:
         index = int(request.GET['index'])
         Dar.objects.filter(id=index).update(rezervace=True)
+
     return render(request, "template_seznam.html", {'dary': dary})
