@@ -106,9 +106,9 @@ Děkujeme. </span>
 
 
 <script>
-function myFunction() {
+function myFunction(formid) {
     if (confirm("Opravdu si přejete rezervovat tento dar? Tato akce lze vrátit kontaktovím nevěsty.")){
-        document.getElementById("form").submit();
+        document.getElementById(formid).submit();
     }
 
 }
@@ -127,9 +127,9 @@ function myFunction() {
                     zarezervováno
                     <br>
                 {% else %}
-                    <form id="form">
+                    <form id={{forloop.counter0}}>
                         <input name="index" value="{{ dar.id }}", type="hidden">
-                        <button type="button" onclick="myFunction()" class="btn default",>rezervovat</button>
+                        <button type="button" onclick="myFunction({{forloop.counter0}})" class="btn default",>rezervovat</button>
 
                     </form>
                 {% endif %}
