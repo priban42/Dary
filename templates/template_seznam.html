@@ -101,13 +101,13 @@ br {
 
 <span style="text-align: central; padding: 0px 30px; font-size:large;">Moc prosíme,
 pokud  nám budete chtít koupit něco, co není na seznamu darů, prokonzultujte nejdříve
-váš nápad se svědkem ženicha <a href="http://mmgg.mysteria.cz/#svedkove">(kontakt)</a>.
+váš nápad s koordinátorem svatky <a href="http://mmgg.mysteria.cz/#svedkove">kontakt</a>.
 Děkujeme. </span>
 
 
 <script>
 function myFunction(formid) {
-    if (confirm("Opravdu si přejete rezervovat tento dar? Tato akce lze vrátit kontaktovím nevěsty.")){
+    if (confirm("Opravdu si přejete rezervovat tento dar? Tato akce lze vrátit kontaktováním nevěsty.")){
         document.getElementById(formid).submit();
     }
 
@@ -146,33 +146,5 @@ function myFunction(formid) {
     {% endif %}
 {% endfor %}
 </div>
-
-<!--
-<table border="1">
-{% for dar in dary %}
-    <tr cellspacing="0">
-        <td>
-            {{ dar.name }}
-            {% if dar.img_url != "" %}
-            <img src="{{ dar.img_url }}"height="150">
-            {% endif %}
-        </td>
-
-        <td>{{ dar.text }}</td>
-            <td>
-                {% if dar.rezervace %}
-                    zarezervováno
-                {% else %}
-                    nezarezervováno
-                    <form>
-                        <input name="index" value="{{ dar.id }}", type="hidden">
-                        <input class="btn default" type="submit", value="rezervovat">
-                    </form>
-                {% endif %}
-        </td>
-    </tr>
-{% endfor %}
-</table>
--->
 
 </body>
